@@ -21,7 +21,7 @@ def decoder(hashfile,wordlist):
                     for wordlines in wordf:
                         wordline = wordlines.rstrip().encode("utf-8")
                         if hashline.decode("utf-8") == md5(wordline).hexdigest():
-                            print(f'[+] Hash founed : {hashline.decode("utf-8")} => {wordline.decode("utf-8")} ')
+                            print(f'[+] Hash found : {hashline.decode("utf-8")} => {wordline.decode("utf-8")} ')
     except Exception as e:
         print(e)
         exit(0)
